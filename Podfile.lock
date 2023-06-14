@@ -1,0 +1,20 @@
+PODS:
+  - LZViewPager (1.2.8):
+    - SnapKit (~> 5.6.0)
+  - SnapKit (5.6.0)
+
+DEPENDENCIES:
+  - LZViewPager
+
+SPEC REPOS:
+  trunk:
+    - LZViewPager
+    - SnapKit
+
+SPEC CHECKSUMS:
+  LZViewPager: 832bd177210060e1282b67aa1e9cd201ded67a5b
+  SnapKit: e01d52ebb8ddbc333eefe2132acf85c8227d9c25
+
+PODFILE CHECKSUM: 719c1b6584b77f5c74e1dde2d09eee045bd43832
+
+COCOAPODS: 1.12.0

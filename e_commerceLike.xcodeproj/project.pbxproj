@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		5D6BB5882A1B37EB0056DA24 /* cardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D6BB5872A1B37EB0056DA24 /* cardCell.swift */; };
 		5D6BB58A2A1B45870056DA24 /* quotesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D6BB5892A1B45870056DA24 /* quotesCell.swift */; };
+		5D6E9C652A4AB88D00B9D190 /* imageSelectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D6E9C642A4AB88D00B9D190 /* imageSelectViewController.swift */; };
+		5D6E9C672A4ABA6700B9D190 /* imageSelectedCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D6E9C662A4ABA6700B9D190 /* imageSelectedCollectionViewCell.swift */; };
 		5D6F46A92A0D0E0F00B0DB30 /* girfViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D6F46A82A0D0E0F00B0DB30 /* girfViewController.swift */; };
 		5D6F46AB2A0D0E1D00B0DB30 /* cardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D6F46AA2A0D0E1D00B0DB30 /* cardViewController.swift */; };
 		5D6F46AD2A0D0E2E00B0DB30 /* QuotesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D6F46AC2A0D0E2E00B0DB30 /* QuotesViewController.swift */; };
@@ -32,6 +34,8 @@
 /* Begin PBXFileReference section */
 		5D6BB5872A1B37EB0056DA24 /* cardCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cardCell.swift; sourceTree = "<group>"; };
 		5D6BB5892A1B45870056DA24 /* quotesCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = quotesCell.swift; sourceTree = "<group>"; };
+		5D6E9C642A4AB88D00B9D190 /* imageSelectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = imageSelectViewController.swift; sourceTree = "<group>"; };
+		5D6E9C662A4ABA6700B9D190 /* imageSelectedCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = imageSelectedCollectionViewCell.swift; sourceTree = "<group>"; };
 		5D6F46A82A0D0E0F00B0DB30 /* girfViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = girfViewController.swift; sourceTree = "<group>"; };
 		5D6F46AA2A0D0E1D00B0DB30 /* cardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cardViewController.swift; sourceTree = "<group>"; };
 		5D6F46AC2A0D0E2E00B0DB30 /* QuotesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuotesViewController.swift; sourceTree = "<group>"; };
@@ -86,6 +90,7 @@
 				5D6F46AC2A0D0E2E00B0DB30 /* QuotesViewController.swift */,
 				5D6F46A82A0D0E0F00B0DB30 /* girfViewController.swift */,
 				5D9BABE12A194B2D0085B6B1 /* newGifViewController.swift */,
+				5D6E9C642A4AB88D00B9D190 /* imageSelectViewController.swift */,
 			);
 			path = pageViewController;
 			sourceTree = "<group>";
@@ -137,6 +142,7 @@
 		5DD1908A2A04C6A50027F82D /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				5D6E9C662A4ABA6700B9D190 /* imageSelectedCollectionViewCell.swift */,
 				5DD1908D2A04C7C50027F82D /* CategoryCell.swift */,
 				5DD190932A04D2460027F82D /* productCell.swift */,
 				5D6BB5892A1B45870056DA24 /* quotesCell.swift */,
@@ -287,10 +293,12 @@
 			files = (
 				5DD190942A04D2460027F82D /* productCell.swift in Sources */,
 				5D6F46AD2A0D0E2E00B0DB30 /* QuotesViewController.swift in Sources */,
+				5D6E9C652A4AB88D00B9D190 /* imageSelectViewController.swift in Sources */,
 				5D6F46AF2A0D0E3B00B0DB30 /* frameViewController.swift in Sources */,
 				5D6BB5882A1B37EB0056DA24 /* cardCell.swift in Sources */,
 				5D9BABE22A194B2D0085B6B1 /* newGifViewController.swift in Sources */,
 				5D6F46B22A0D109100B0DB30 /* pageViewController.swift in Sources */,
+				5D6E9C672A4ABA6700B9D190 /* imageSelectedCollectionViewCell.swift in Sources */,
 				5D6BB58A2A1B45870056DA24 /* quotesCell.swift in Sources */,
 				5DD1907A2A04C4FF0027F82D /* CategoryVc.swift in Sources */,
 				5DD190762A04C4FF0027F82D /* AppDelegate.swift in Sources */,

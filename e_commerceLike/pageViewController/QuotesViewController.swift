@@ -39,5 +39,13 @@ extension QuotesViewController:UITableViewDelegate,UITableViewDataSource
         }
         return quotesCell()
     }
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+       
+            let category = DataService.instance.getCategoires()
+            imageSelectViewController.ab = DataService.instance.QuotesAnniversayGet()
+            
+            performSegue(withIdentifier: "top", sender: category)
+        }
+    }
     
-}
+

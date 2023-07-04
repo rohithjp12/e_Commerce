@@ -20,9 +20,6 @@ struct Category
     }
 }
 
-
-
-
 struct Category2
 {
     private(set) public var imgName2:String

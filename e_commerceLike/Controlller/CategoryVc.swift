@@ -10,8 +10,12 @@ import UIKit
 class CategoryVc: UIViewController{
   
     
+    @IBOutlet weak var mypageController: UIPageControl!
+    var currentcellIndex = 0
+    var a = ["good1","good2","good3","good4","good5","good6","good7"]
+    var timer:Timer?
     
-    var a = ["p2","p1","p3","p4","p5"]
+    
     
     @IBOutlet weak var sideBarButtonItem: UIBarButtonItem!
     
@@ -37,8 +41,26 @@ class CategoryVc: UIViewController{
         categoryCollection4.dataSource = self
        
         
+        timer = Timer.scheduledTimer(timeInterval: 2.0, target: self, selector: #selector(slideToNext), userInfo: nil, repeats: true)
+        mypageController.numberOfPages = a.count
         
     }
+    @objc func slideToNext()
+    {
+        if currentcellIndex < a.count-1
+        {
+            currentcellIndex  = currentcellIndex + 1
+        }
+        
+        else
+        {
+            currentcellIndex = 0
+        }
+        mypageController.currentPage = currentcellIndex
+        mainCollectionView.scrollToItem(at:IndexPath(item:currentcellIndex,section: 0),at: .right , animated:true)
+    }
+
+    
 
 
 }
@@ -284,6 +306,7 @@ extension CategoryVc:UICollectionViewDelegate,UICollectionViewDataSource,UIColle
             {
                 return 20
             }
+            
         }
     }
 }

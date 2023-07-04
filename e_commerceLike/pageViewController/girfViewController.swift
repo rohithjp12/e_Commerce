@@ -8,7 +8,7 @@ class girfViewController: UIViewController {
     
     
     static var a = [Product]()
-   // static var a = [Product]()
+ 
     static var b = [Product]()
     @IBOutlet weak var productsCollection: UICollectionView!
     private(set) public var products = [Product]()
@@ -45,7 +45,7 @@ extension girfViewController:UICollectionViewDelegate,UICollectionViewDataSource
         {
             let pr = girfViewController.a[indexPath.row]
             cell.GIFsetUpCell(_products: pr)
-            print("my photo  \(pr.productImgName))")
+           // print("my photo  \(pr.productImgName))")
             cell.layer.cornerRadius = 15
             return cell
         }
@@ -62,6 +62,15 @@ extension girfViewController:UICollectionViewDelegate,UICollectionViewDataSource
     {
         return CGSize(width: collectionView.frame.size.width/3-5, height: collectionView.frame.size.height/3-5)
     }
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let category = DataService.instance.getCategoires()
+        
+        print("my check image \(category)")
+        imageSelectViewController.ab = DataService.instance.getcat1()
+        
+        performSegue(withIdentifier: "top", sender: category)
+    }
 
+    
     
 }

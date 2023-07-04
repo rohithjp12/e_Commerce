@@ -12,9 +12,7 @@ struct Product
 {
    
     private(set) public var productImgName:String
-    
-    
-    
+  
     init(_productImgname:String)
     {
      //   self.ProductTitle = _productTitle

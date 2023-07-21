@@ -8,7 +8,6 @@ class girfViewController: UIViewController {
     
     
     static var a = [Product]()
- 
     static var b = [Product]()
     @IBOutlet weak var productsCollection: UICollectionView!
     private(set) public var products = [Product]()

@@ -264,6 +264,8 @@ extension CategoryVc:UICollectionViewDelegate,UICollectionViewDataSource,UIColle
             {
             case "love1":
                 girfViewController.a = Dataservice2.instance2.loveGIF()
+              //  let abc = Dataservice2.instance2.loveGIF()[indexPath.row]
+                
             case "love2":
                 girfViewController.a = Dataservice2.instance2.momGIF()
             case "love3":

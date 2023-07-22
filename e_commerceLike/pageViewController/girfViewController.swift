@@ -62,12 +62,19 @@ extension girfViewController:UICollectionViewDelegate,UICollectionViewDataSource
         return CGSize(width: collectionView.frame.size.width/3-5, height: collectionView.frame.size.height/3-5)
     }
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        let category = DataService.instance.getCategoires()
-        
-        print("my check image \(category)")
-        imageSelectViewController.ab = DataService.instance.getcat1()
-        
-        performSegue(withIdentifier: "top", sender: category)
+       // let category = DataService.instance.getCategoires()[indexPath.row]
+        //var check = category.title
+      //  print("my checking \(check)")
+//        switch check
+//        {
+//            case "
+//        }
+        let c   = DataService.instance.getcat1()[indexPath.row]
+
+        CheckViewController.imag = c.productImgName
+       // imageSelectViewController.ab = DataService.instance.getcat1()
+
+        performSegue(withIdentifier: "top", sender: c)
     }
 
     

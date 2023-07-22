@@ -57,8 +57,8 @@ extension cardViewController:UICollectionViewDelegate,UICollectionViewDataSource
         return CGSize(width: collectionView.frame.size.width/3-5, height: collectionView.frame.size.height/3-5)
     }
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        let category = DataService.instance.getCategoires()
-        imageSelectViewController.ab = DataService.instance.cardAnniversaryGet()
+        let category = DataService.instance.cardAnniversaryGet()[indexPath.row]
+        CheckViewController.imag = category.productImgName
         
         performSegue(withIdentifier: "top", sender: category)
     }

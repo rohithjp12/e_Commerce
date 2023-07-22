@@ -404,7 +404,7 @@
         <scene sceneID="TGE-WP-aMH">
             <objects>
                 <viewController storyboardIdentifier="pageViewController" id="w7e-sQ-fcm" customClass="pageViewController" customModule="e_commerceLike" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="2tg-uM-UNc">
+                    <view key="view" contentMode="scaleToFill" ambiguous="YES" id="2tg-uM-UNc">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -449,11 +449,11 @@
         <scene sceneID="KxP-Uz-gvJ">
             <objects>
                 <viewController id="oZe-xU-mqP" customClass="imageSelectViewController" customModule="e_commerceLike" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="tZm-Df-w1j">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="783"/>
+                    <view key="view" contentMode="scaleToFill" ambiguous="YES" id="tZm-Df-w1j">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="saG-v4-hsZ">
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" pagingEnabled="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="saG-v4-hsZ">
                                 <rect key="frame" x="0.0" y="183" width="393" height="474"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
@@ -500,7 +500,7 @@
                                 <rect key="frame" x="138" y="698" width="116" height="26"/>
                                 <color key="pageIndicatorTintColor" red="0.83921568629999999" green="0.3809594597" blue="0.33232472200000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </pageControl>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ehN-yg-huK">
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ehN-yg-huK">
                                 <rect key="frame" x="16" y="714" width="151" height="47"/>
                                 <color key="backgroundColor" systemColor="systemGreenColor"/>
                                 <constraints>
@@ -516,7 +516,7 @@
                                     <action selector="saveaction:" destination="oZe-xU-mqP" eventType="touchUpInside" id="4Aw-xm-fLw"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="823-Y0-FBM">
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="823-Y0-FBM">
                                 <rect key="frame" x="207" y="714" width="170" height="47"/>
                                 <color key="backgroundColor" systemColor="systemGreenColor"/>
                                 <constraints>
@@ -557,7 +557,56 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KvQ-6v-rBa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2504.5801526717555" y="-1149.2957746478874"/>
+            <point key="canvasLocation" x="6631" y="-369"/>
+        </scene>
+        <!--Check View Controller-->
+        <scene sceneID="ddZ-Zg-5mB">
+            <objects>
+                <viewController id="BJ1-ih-Fl0" customClass="CheckViewController" customModule="e_commerceLike" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Emx-eI-8ca">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="783"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="pGt-nD-XQS">
+                                <rect key="frame" x="10" y="59" width="373" height="581"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="581" id="the-qq-kBA"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="55V-6c-kOd">
+                                <rect key="frame" x="126" y="713" width="141" height="45"/>
+                                <color key="backgroundColor" systemColor="systemBlueColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="1so-wu-1YV"/>
+                                </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Download"/>
+                                <connections>
+                                    <action selector="savebtn:" destination="BJ1-ih-Fl0" eventType="touchUpInside" id="dlo-N9-1l2"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="aRj-u8-0PM"/>
+                        <color key="backgroundColor" red="0.93658140569914783" green="0.78068807655607364" blue="0.98106476754853222" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="aRj-u8-0PM" firstAttribute="trailing" secondItem="55V-6c-kOd" secondAttribute="trailing" constant="126" id="0DD-iI-vv0"/>
+                            <constraint firstItem="pGt-nD-XQS" firstAttribute="leading" secondItem="aRj-u8-0PM" secondAttribute="leading" constant="10" id="0PC-nk-D21"/>
+                            <constraint firstItem="55V-6c-kOd" firstAttribute="leading" secondItem="aRj-u8-0PM" secondAttribute="leading" constant="126" id="5F3-K7-f8l"/>
+                            <constraint firstItem="pGt-nD-XQS" firstAttribute="top" secondItem="aRj-u8-0PM" secondAttribute="top" id="72f-PD-SA2"/>
+                            <constraint firstItem="aRj-u8-0PM" firstAttribute="bottom" secondItem="55V-6c-kOd" secondAttribute="bottom" constant="25" id="BZG-06-5yx"/>
+                            <constraint firstItem="aRj-u8-0PM" firstAttribute="trailing" secondItem="pGt-nD-XQS" secondAttribute="trailing" constant="10" id="Hh5-Ox-S5x"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="Gbs-nH-SKq"/>
+                    <connections>
+                        <outlet property="downloadBtn" destination="55V-6c-kOd" id="Vbk-Fk-hgD"/>
+                        <outlet property="imageViewW" destination="pGt-nD-XQS" id="A6V-EH-adM"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Sjn-eK-CuX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4620.6106870229005" y="-315.49295774647891"/>
         </scene>
         <!--Girf View Controller-->
         <scene sceneID="N3p-bO-LGo">
@@ -619,7 +668,7 @@
                     <navigationItem key="navigationItem" id="uok-Xl-qNl"/>
                     <connections>
                         <outlet property="productsCollection" destination="BNO-Jn-yUR" id="H7l-Jr-i4A"/>
-                        <segue destination="oZe-xU-mqP" kind="show" identifier="top" id="eio-6r-uGw"/>
+                        <segue destination="BJ1-ih-Fl0" kind="show" identifier="top" id="hZh-cA-IAo"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kDE-2Y-AA8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -684,7 +733,7 @@
                     </view>
                     <connections>
                         <outlet property="cardCollectionView" destination="9cW-5r-voa" id="lfV-fb-KXq"/>
-                        <segue destination="oZe-xU-mqP" kind="show" identifier="top" id="qeU-cs-hUV"/>
+                        <segue destination="BJ1-ih-Fl0" kind="show" identifier="top" id="512-GR-PNp"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kNc-Ty-Qzb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -743,7 +792,7 @@
                     </view>
                     <connections>
                         <outlet property="quotesTable" destination="wls-z6-ZtN" id="hBS-F8-3MF"/>
-                        <segue destination="oZe-xU-mqP" kind="show" identifier="top" id="30C-Ab-3sP"/>
+                        <segue destination="BJ1-ih-Fl0" kind="show" identifier="top" id="Qi4-Uo-vBh"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sGf-AR-PoO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -785,7 +834,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="30C-Ab-3sP"/>
+        <segue reference="Qi4-Uo-vBh"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="g2 1" width="600" height="600"/>
@@ -799,6 +848,9 @@
         </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemGreenColor">
             <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

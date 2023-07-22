@@ -14,7 +14,7 @@ class imageSelectViewController: UIViewController {
     @IBOutlet weak var Save: UIButton!
     
     static var ab = [Product]()
-   // print("my  format     \(ab)")
+    
     @IBOutlet weak var selectCollectionView: UICollectionView!
     
     @IBOutlet weak var mypageController: UIPageControl!
@@ -86,9 +86,9 @@ extension imageSelectViewController:UICollectionViewDelegate,UICollectionViewDat
     func collectionView(_ collectionVeiw: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = selectCollectionView.dequeueReusableCell(withReuseIdentifier: "selectedCell", for: indexPath) as! imageSelectedCollectionViewCell
         let ba = imageSelectViewController.ab[indexPath.row]
-        
+        let ds = DataService.instance.getcat1()[indexPath.row]
        // print("my photo     \(ba)")
-        cell.imageSelectSetupCell(_cate: ba)
+        cell.imageSelectSetupCell(_cate: ds)
         cell.layer.cornerRadius = 50
         return cell
     }

@@ -41,9 +41,9 @@ extension QuotesViewController:UITableViewDelegate,UITableViewDataSource
     }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
        
-            let category = DataService.instance.getCategoires()
-            imageSelectViewController.ab = DataService.instance.QuotesAnniversayGet()
-            
+        let category = DataService.instance.QuotesAnniversayGet()[indexPath.row]
+         //   imageSelectViewController.ab = DataService.instance.QuotesAnniversayGet()
+        CheckViewController.imag = category.productImgName
             performSegue(withIdentifier: "top", sender: category)
         }
     }

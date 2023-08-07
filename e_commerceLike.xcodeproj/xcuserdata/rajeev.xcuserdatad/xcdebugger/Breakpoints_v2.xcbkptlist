@@ -20,34 +20,94 @@
             landmarkType = "3">
             <Locations>
                <Location
-                  uuid = "C0722EDE-2EDE-409E-8DA5-4A4D4A7E5C8F - 2ebbcc211bf9038c"
+                  uuid = "C0722EDE-2EDE-409E-8DA5-4A4D4A7E5C8F - 348b445f8acdf42e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "e_commerceLike.CategoryCell.categoryImage2.getter : Swift.Optional&lt;__C.UIImageView&gt;"
+                  moduleName = "e_commerceLike"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/rajeev/Desktop/Desktop%20-%20Rajeev%E2%80%99s%20MacBook%20Air/ecommerce-main/e_commerceLike/e_commerceLike/Views/CategoryCell.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "85">
+               </Location>
+               <Location
+                  uuid = "C0722EDE-2EDE-409E-8DA5-4A4D4A7E5C8F - 6875a7ece3e8003a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "e_commerceLike.CategoryCell.categoryImage2.setter : Swift.Optional&lt;__C.UIImageView&gt;"
+                  moduleName = "e_commerceLike"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/rajeev/Desktop/Desktop%20-%20Rajeev%E2%80%99s%20MacBook%20Air/ecommerce-main/e_commerceLike/e_commerceLike/Views/CategoryCell.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "136">
+               </Location>
+               <Location
+                  uuid = "C0722EDE-2EDE-409E-8DA5-4A4D4A7E5C8F - 31670d70d99e5f29"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "e_commerceLike.CategoryCell.categoryImage2.modify : Swift.Optional&lt;__C.UIImageView&gt;"
+                  moduleName = "e_commerceLike"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/rajeev/Desktop/Desktop%20-%20Rajeev%E2%80%99s%20MacBook%20Air/ecommerce-main/e_commerceLike/e_commerceLike/Views/CategoryCell.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "0">
+               </Location>
+               <Location
+                  uuid = "C0722EDE-2EDE-409E-8DA5-4A4D4A7E5C8F - df5b92e2492d5da"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "e_commerceLike.CategoryCell.categoryImage2.modify : Swift.Optional&lt;__C.UIImageView&gt; with unmangled suffix &quot;.resume.0&quot;"
+                  moduleName = "e_commerceLike"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/rajeev/Desktop/Desktop%20-%20Rajeev%E2%80%99s%20MacBook%20Air/ecommerce-main/e_commerceLike/e_commerceLike/Views/CategoryCell.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "26">
+               </Location>
+               <Location
+                  uuid = "C0722EDE-2EDE-409E-8DA5-4A4D4A7E5C8F - bcba8c88bb405c1f"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
                   symbolName = "e_commerceLike.CategoryCell.init(frame: __C.CGRect) -&gt; e_commerceLike.CategoryCell"
                   moduleName = "e_commerceLike"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/rajeev/Desktop/ecommerce-main/e_commerceLike/e_commerceLike/Views/CategoryCell.swift"
+                  urlString = "file:///Users/rajeev/Desktop/Desktop%20-%20Rajeev%E2%80%99s%20MacBook%20Air/ecommerce-main/e_commerceLike/e_commerceLike/Views/CategoryCell.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "16"
-                  endingLineNumber = "16"
-                  offsetFromSymbolStart = "225">
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "238">
                </Location>
                <Location
-                  uuid = "C0722EDE-2EDE-409E-8DA5-4A4D4A7E5C8F - 29eb386acb372730"
+                  uuid = "C0722EDE-2EDE-409E-8DA5-4A4D4A7E5C8F - bbea78c36b8e78a3"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
                   symbolName = "e_commerceLike.CategoryCell.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;e_commerceLike.CategoryCell&gt;"
                   moduleName = "e_commerceLike"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/rajeev/Desktop/ecommerce-main/e_commerceLike/e_commerceLike/Views/CategoryCell.swift"
+                  urlString = "file:///Users/rajeev/Desktop/Desktop%20-%20Rajeev%E2%80%99s%20MacBook%20Air/ecommerce-main/e_commerceLike/e_commerceLike/Views/CategoryCell.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "16"
-                  endingLineNumber = "16"
-                  offsetFromSymbolStart = "147">
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "157">
                </Location>
             </Locations>
          </BreakpointContent>

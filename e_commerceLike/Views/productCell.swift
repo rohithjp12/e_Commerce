@@ -25,7 +25,8 @@ class productCell: UICollectionViewCell {
     
     func GIFsetUpCell(_products:Product)
     {
-        self.img.image = UIImage(named:_products.productImgName)
+     //   self.img.image = UIImage(named:_products.productImgName)
+        self.img.image = UIImage.gifImageWithName(_products.productImgName)
     }
     func setViewCell()
     {

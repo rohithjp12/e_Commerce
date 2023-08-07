@@ -31,9 +31,7 @@
                                                     <constraint firstAttribute="height" constant="37" id="gMj-l5-u56"/>
                                                 </constraints>
                                                 <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="plain" title="See all">
-                                                    <color key="baseForegroundColor" red="1" green="0.27371574050000003" blue="0.31156559550000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                </buttonConfiguration>
+                                                <buttonConfiguration key="configuration" style="plain"/>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Family" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fdu-jY-nev">
                                                 <rect key="frame" x="0.0" y="381" width="108" height="37"/>
@@ -52,9 +50,7 @@
                                                     <constraint firstAttribute="height" constant="37" id="vdO-OG-bHT"/>
                                                 </constraints>
                                                 <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="plain" title="See all">
-                                                    <color key="baseForegroundColor" red="1" green="0.27371574050000003" blue="0.31156559550000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                </buttonConfiguration>
+                                                <buttonConfiguration key="configuration" style="plain"/>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7wI-fU-Fqz">
                                                 <rect key="frame" x="302" y="5" width="91" height="37"/>
@@ -63,7 +59,7 @@
                                                     <constraint firstAttribute="height" constant="37" id="ssL-gH-Vhp"/>
                                                 </constraints>
                                                 <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="plain" title="    see all">
+                                                <buttonConfiguration key="configuration" style="plain" title="   ">
                                                     <color key="baseForegroundColor" red="0.92657778960000003" green="0.31743065110000002" blue="0.2065717651" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </buttonConfiguration>
                                             </button>
@@ -557,7 +553,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KvQ-6v-rBa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6631" y="-369"/>
+            <point key="canvasLocation" x="5769" y="-298"/>
         </scene>
         <!--Check View Controller-->
         <scene sceneID="ddZ-Zg-5mB">
@@ -834,7 +830,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="Qi4-Uo-vBh"/>
+        <segue reference="hZh-cA-IAo"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="g2 1" width="600" height="600"/>

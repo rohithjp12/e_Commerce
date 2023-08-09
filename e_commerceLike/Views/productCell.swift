@@ -12,11 +12,12 @@ class productCell: UICollectionViewCell {
     @IBOutlet weak var productImg: UIImageView?
     @IBOutlet weak var productTitle: UILabel?
     @IBOutlet weak var productPrice: UILabel?
-    
-    
+
     @IBOutlet weak var tempcheck: UILabel!
-    
     @IBOutlet weak var img: UIImageView!
+    
+   
+    
     
     //same var productPrice:UILabel!
     override  func awakeFromNib() {
@@ -33,4 +34,8 @@ class productCell: UICollectionViewCell {
         self.layer.cornerRadius = 5
         self.clipsToBounds = true
     }
+    
+
+    
+    
 }

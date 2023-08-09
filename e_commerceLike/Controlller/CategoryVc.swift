@@ -217,10 +217,34 @@ extension CategoryVc:UICollectionViewDelegate,UICollectionViewDataSource,UIColle
             switch q
             {
             case "popular1":
-                QuotesViewController.quotes = DataService.instance.QuotesAnniversayGet()
+                QuotesViewController.quotesTitle = DataService.instance.quotesTitleGetAnniversary()
             case "popular2":
-                QuotesViewController.quotes = DataService.instance.QuotesGoodNightGet()
+                QuotesViewController.quotesTitle = DataService.instance.quotesTitleGetGoodNight()
+
+            case "popular3":
+                QuotesViewController.quotesTitle = DataService.instance.quotesTitleGetLove()
+
+            case "popular4":
+                QuotesViewController.quotesTitle = DataService.instance.quotesTitleGetMiss()
+
+            case "popular5":
+                QuotesViewController.quotesTitle = DataService.instance.quotesTitleGetBirthday()
+
+               // QuotesViewController.quotes = DataService.instance.QuotesAnniversayGet()
+           // case "popular2":
+               // QuotesViewController.quotes = DataService.instance.QuotesGoodNightGet()
                 
+            default:
+                print("Switch quotes Cell error")
+                
+            }
+            switch q
+            {
+            case "popular1":
+                frameViewController.framee = DataService.instance.frameGetani()
+            //    QuotesViewController.quotesTitle = DataService.instance.quotesTitleGetAnniversary()
+           
+             
             default:
                 print("Switch quotes Cell error")
                 
@@ -266,6 +290,7 @@ extension CategoryVc:UICollectionViewDelegate,UICollectionViewDataSource,UIColle
                 girfViewController.a = Dataservice2.instance2.loveGIF()
               //  let abc = Dataservice2.instance2.loveGIF()[indexPath.row]
                 
+                
             case "love2":
                 girfViewController.a = Dataservice2.instance2.momGIF()
             case "love3":
@@ -291,6 +316,19 @@ extension CategoryVc:UICollectionViewDelegate,UICollectionViewDataSource,UIColle
           default:
               print("love__Card")
           }
+            switch l3
+            {
+            case "love1":
+                QuotesViewController.quotesTitle = Dataservice2.instance2.quotesTitle2GetLove()
+            case "love2":
+                QuotesViewController.quotesTitle = Dataservice2.instance2.quotesTitle2GetMom()
+            case "love3":
+                QuotesViewController.quotesTitle = Dataservice2.instance2.quotesTitle2GetFather()
+            case "love4":
+                QuotesViewController.quotesTitle = Dataservice2.instance2.quotesTitle2GetWife()
+            default:
+                print("love__Card")
+            }
             
             performSegue(withIdentifier: "TopProductVc", sender: category1)
             //

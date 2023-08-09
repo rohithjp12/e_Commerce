@@ -15,6 +15,7 @@ class cardViewController: UIViewController {
         super.viewDidLoad()
         cardCollectionView.delegate = self
         cardCollectionView.dataSource = self
+       
     }
 
 }
@@ -22,28 +23,28 @@ extension cardViewController:UICollectionViewDelegate,UICollectionViewDataSource
 {
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-       // return products.count
+        // return products.count
         return cardViewController.card.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         if let cell = cardCollectionView.dequeueReusableCell(withReuseIdentifier: "cardCell",for:indexPath) as? cardCell
         {
-//            let products_indexPath = products[indexPath.row]
-//            cell.setUpCell(_products: products_indexPath)
-//            cell.productImg.layer.cornerRadius = 20
-//            return cell
+            //            let products_indexPath = products[indexPath.row]
+            //            cell.setUpCell(_products: products_indexPath)
+            //            cell.productImg.layer.cornerRadius = 20
+            //            return cell
             
             let cR = cardViewController.card[indexPath.row]
             cell.cardSetUpCell(_cards: cR)
-           // print("my photo  \(cR.productImgName))")
+            // print("my photo  \(cR.productImgName))")
             cell.layer.cornerRadius = 15
             return cell
         }
         return cardCell()
     }
     
-   
+    
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
         return 5
@@ -57,9 +58,23 @@ extension cardViewController:UICollectionViewDelegate,UICollectionViewDataSource
         return CGSize(width: collectionView.frame.size.width/3-5, height: collectionView.frame.size.height/3-5)
     }
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        let category = DataService.instance.cardAnniversaryGet()[indexPath.row]
-        CheckViewController.imag = category.productImgName
         
-        performSegue(withIdentifier: "top", sender: category)
+
+        let category1 = DataService.instance.cardAnniversaryGet()[indexPath.row]
+        CheckViewController.imag = category1.productImgName
+            
+        let vc  = DataService.instance.cardGoodNightGet()[indexPath.row]
+        CheckViewController.imag = vc.productImgName
+        
+        let cd = DataService.instance.cardLoveGet()[indexPath.row]
+        CheckViewController.imag = cd.productImgName
+        
+        let dc = DataService.instance.cardtMissYou()[indexPath.row]
+        CheckViewController.imag = dc.productImgName
+//
+//        let cdd = DataService.instance.cardBirthday()[indexPath.row]
+//        CheckViewController.imag = cdd.productImgName
+        
+        performSegue(withIdentifier: "top", sender: AnyObject.self)
     }
 }

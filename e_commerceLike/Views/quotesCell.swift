@@ -9,20 +9,24 @@ import UIKit
 
 class quotesCell: UITableViewCell {
 
-    @IBOutlet var quotesImage:UIImageView!
-    
+   // @IBOutlet var quotesImage:UIImageView!
+    @IBOutlet weak var quotesTitle:UILabel?
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
     }
 
     
-    func quotesSetUpCell(_quotes:Product)
+//    func quotesSetUpCell(_quotes:Product)
+//    {
+//        self.quotesImage.image = UIImage(named: _quotes.productImgName)
+//        quotesImage.layer.cornerRadius = 20
+//    }
+//    
+    func quotesTitleSetUpCell(_quotes:quotesModel)
     {
-        self.quotesImage.image = UIImage(named: _quotes.productImgName)
-        quotesImage.layer.cornerRadius = 20
+        self.quotesTitle?.text = _quotes.quatesName
     }
-    
     
     
     override func setSelected(_ selected: Bool, animated: Bool) {

@@ -14,6 +14,8 @@ class CheckViewController: UIViewController ,UINavigationControllerDelegate{
     @IBOutlet var imageViewW:UIImageView!
     static var imag:String?
     var filteredImage: UIImage?
+    static var pdp = [Product]()
+    
     var imagePicker: UIImagePickerController!
     
     

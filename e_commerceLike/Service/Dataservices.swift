@@ -67,7 +67,7 @@ class DataService
       //  Product(  _productImgname: "anigf11"),
         Product(_productImgname: "gng2"),
         Product(_productImgname: "gng3"),
-        Product(_productImgname: "gng4"),
+        Product(_productImgname: "gng6"),
         Product( _productImgname: "gng5"),
         Product( _productImgname: "gng6"),
         Product( _productImgname: "gng2"),
@@ -106,7 +106,7 @@ class DataService
         Product( _productImgname: "bb1"),
         Product(_productImgname: "bb2"),
         Product(_productImgname: "bb3"),
-        Product( _productImgname: "bb4"),
+        Product( _productImgname: "bb1"),
         Product( _productImgname: "bb5"),
         Product(_productImgname: "bb6"),
         Product(_productImgname: "bb2"),
@@ -128,12 +128,12 @@ class DataService
     [
         
         Product( _productImgname: "bb5"),
-        Product(_productImgname: "bb6"),
+        Product(_productImgname: "bb1"),
         Product(_productImgname: "bb2"),
         Product(_productImgname: "bb3"),
         Product( _productImgname: "bb4"),
         Product( _productImgname: "bb5"),
-        Product(_productImgname: "bb6"),
+        Product(_productImgname: "bb4"),
         Product( _productImgname: "bb1"),
         Product(_productImgname: "bb2"),
         Product(_productImgname: "bb3"),
@@ -206,7 +206,7 @@ class DataService
      
     ]
     private let cardGoodNight = [
-        Product(  _productImgname: "funny"),
+        Product(  _productImgname: "g10"),
         Product(_productImgname: "g11"),
         Product(_productImgname: "g8"),
         Product(_productImgname: "g4"),
@@ -324,16 +324,122 @@ class DataService
         Product( _productImgname: "ani14"),
         
     ]
-    func QuotesAnniversayGet()->[Product]
+    private let quotesTitleAnniversary =
+    [
+        quotesModel(_quatesName: "You're my sun and moon, and all of my stars. I love you so much. Happy anniversary"),
+        quotesModel(_quatesName: "You're everything I've ever wanted and needed in a partner. Thank you for loving me. Happy anniversary"),
+        quotesModel(_quatesName: "I’m pretty confident that no one on earth is as lucky as me. Why? Because I get to wake up to you every day. Happy anniversary, baby"),
+        quotesModel(_quatesName: "If we hold onto our wounds in an area of life then we hold back the growth of wisdom in that area too"),
+        quotesModel(_quatesName: "I’m pretty confident that no one on earth is as lucky as me. Why? Because I get to wake up to you every day. Happy anniversary, baby"),
+        quotesModel(_quatesName: "If we hold onto our wounds in an area of life then we hold back the growth of wisdom in that area too"),
+        quotesModel(_quatesName: "I’m pretty confident that no one on earth is as lucky as me. Why? Because I get to wake up to you every day. Happy anniversary, baby"),
+        quotesModel(_quatesName: "Walking alongside you is the greatest journey of my life. I’ll cherish you always. Happy anniversary"),
+        quotesModel(_quatesName: "Your face brings a smile to my face every day and for that I’m forever grateful. Happy anniversary to the person who makes my heart sing"),
+        quotesModel(_quatesName: "“I couldn’t survive a day without you. I’m so glad we’ve lived to see another year together.”"),
+        quotesModel(_quatesName: "“Our wedding day may not have been perfect, but it was the happiest day of my life. Thank you for being by my side for all these years.”"),
+        quotesModel(_quatesName: "“This is our first year together, but we have an eternity to go!”"),
+    ]
+    private let quotesTitleGoodNight =
+    [
+        quotesModel(_quatesName: "I'm so grateful for your presence in my life, even when we're not together. Good night!"),
+        quotesModel(_quatesName: "Your smile is the most beautiful in the world. Now you know what I;m dreaming of tonight!"),
+        quotesModel(_quatesName: "I'm grateful for another day spent loving you. Good night and sweet dreams"),
+        quotesModel(_quatesName: "Hope you have a good sleep, sweet dreams, and an even better day tomorrow."),
+        quotesModel(_quatesName: "Good night! Always here, always in your corner. Wishing you some sweet dreams"),
+        quotesModel(_quatesName: "Good night, sleep well, and remember that tomorrow is another day to procrastinate."),
+        quotesModel(_quatesName: "Let the monsters under the bed know we're going to have a stern talking to if they keep you up"),
+        quotesModel(_quatesName: "Sleep, my love, dream happy dreams. You are the only one who has ever touched my heart. It will forever be yours."),
+        quotesModel(_quatesName: "Sleep, my love, dream happy dreams. You are the only one who has ever touched my heart. It will forever be yours."),
+        quotesModel(_quatesName: "May tonight be a lovely and serene bridge that will lead you to a wonderful tomorrow"),
+        quotesModel(_quatesName: "This is the end of the day, but soon there will be a new day."),
+
+    ]
+    private let quotesTitleLove =
+    [
+        quotesModel(_quatesName: "It only took one look at you to know you were going to be my wife. I thank God every day that I listened to my gut. The rest is history."),
+        quotesModel(_quatesName: "Thanks for being my knight in shining armor and having my back. Love you so much"),
+        quotesModel(_quatesName: "There are no words I could use to describe the love we share. I’m so incredibly thankful for you"),
+        quotesModel(_quatesName: "No matter how dull my days go, your presence makes everything in my life colorful, so grateful to have you in my life"),
+        quotesModel(_quatesName: "I cannot be more blessed for having you in my life. I will cherish you in my heart forever and always"),
+        quotesModel(_quatesName: "Thanks for being my knight in shining armor and having my back. Love you so much"),
+        quotesModel(_quatesName: "I never knew that love could be this beautiful until you came into my life. I love you more than you know"),
+        quotesModel(_quatesName: "No matter how dull my days go, your presence makes everything in my life colorful, so grateful to have you in my life"),
+        quotesModel(_quatesName: "There are no words I could use to describe the love we share. I’m so incredibly thankful for you"),
+        quotesModel(_quatesName: "Thanks for being my knight in shining armor and having my back. Love you so much"),
+    ]
+    private let quotesTitleMissYou =
+    [
+        quotesModel(_quatesName: "Listen to the sunset; see its pretty hue. When you see it, think of me, and I’ll think of you"),
+        quotesModel(_quatesName: "When we miss someone, often, what we really miss is the part of us that with this someone awakens"),
+        quotesModel(_quatesName: "They say when you are missing someone that they are probably feeling the same, but I don't think it's possible for you to miss me"),
+        quotesModel(_quatesName: "Poets use countless words to describe their pain, but I only need three: I miss you"),
+        quotesModel(_quatesName: "When you are missing someone, time seems to move slower, and when I’m falling in love with someone, time seems to be moving faster"),
+        quotesModel(_quatesName: "Missing you is flashes of our past and fantasies of our future with the hard irony of the absence of our present as present occurs"),
+        quotesModel(_quatesName: "Listen to the sunset; see its pretty hue. When you see it, think of me, and I’ll think of you"),
+        quotesModel(_quatesName: "Missing you is flashes of our past and fantasies of our future with the hard irony of the absence of our present as present occurs"),
+        quotesModel(_quatesName: "When we miss someone, often, what we really miss is the part of us that with this someone awakens"),
+        quotesModel(_quatesName: "When you are missing someone, time seems to move slower, and when I’m falling in love with someone, time seems to be moving faster"),
+        quotesModel(_quatesName: "Listen to the sunset; see its pretty hue. When you see it, think of me, and I’ll think of you"),
+
+    ]
+    private let quotesTitleBirthday =
+    [
+        quotesModel(_quatesName: "Wishing you nothing but tacos and champagne on your big day, or whatever else makes it special"),
+        quotesModel(_quatesName: "Another birthday, another year older. Don’t you think it’s about time we started to act our age? Well, I know exactly what you’ll say. Next year. Happy birthday."),
+        quotesModel(_quatesName: "Wishing you nothing but tacos and champagne on your big day, or whatever else makes it special!"),
+        quotesModel(_quatesName: "I know we don’t live together anymore so I’m shipping you an abundance of love this birthday, bestie."),
+        quotesModel(_quatesName: "Happy birthday! Thank you for living your life in a way that makes every day worth celebrating"),
+        quotesModel(_quatesName: "May you be gifted with life’s biggest joys and never-ending bliss. After all, you yourself are a gift to earth, so you deserve the best. Happy birthday."),
+        quotesModel(_quatesName: "Birthdays are a new start, a fresh beginning and a time to pursue new endeavors with new goals. Move forward with confidence and courage."),
+        quotesModel(_quatesName: "Your birthday is the first day of another 365-day journey. Be the shining thread in the beautiful tapestry of the world to make this year the best ever. Enjoy the ride"),
+        quotesModel(_quatesName: "Forget about the past, you can’t change it. Forget about the future, you can’t predict it. And forget about the present, I didn’t get you one. Happy birthday!"),
+        quotesModel(_quatesName: "Happy Birthday! You know, you don’t look that old. But then, you don’t look that young, either"),
+
+    ]
+    
+    func quotesTitleGetAnniversary()->[quotesModel]
     {
-        return quotesAnniversay
+        return  quotesTitleAnniversary
     }
-    func QuotesGoodNightGet()->[Product]
+   
+    func quotesTitleGetGoodNight()->[quotesModel]
     {
-        return quotesGoodNight
+        return quotesTitleGoodNight
+    }
+    func quotesTitleGetLove()->[quotesModel]
+    {
+        return quotesTitleLove
+    }
+    func quotesTitleGetMiss()->[quotesModel]
+    {
+        return quotesTitleMissYou
+    }
+    func quotesTitleGetBirthday()->[quotesModel]
+    {
+       return quotesTitleBirthday
+    }
+    
+    private var frame1anni =
+    [
+        Product(_productImgname: "fat1"),
+        Product(_productImgname: "fat2"),
+        Product(_productImgname: "fat4"),
+        Product(_productImgname: "fat5"),
+        Product(_productImgname: "fat2"),
+        Product(_productImgname: "fat5"),
+       
+    ]
+    func frameGetani()->[Product]
+    {
+        return frame1anni
     }
     
 }
+
+
+
+
+
 
 class Dataservice2
 {
@@ -519,7 +625,93 @@ class Dataservice2
         return cardl4
     }
     
+   private let quotesTitleL2love =
+    [
+        quotesModel(_quatesName: "It only took one look at you to know you were going to be my wife. I thank God every day that I listened to my gut. The rest is history."),
+        quotesModel(_quatesName: "Thanks for being my knight in shining armor and having my back. Love you so much"),
+        quotesModel(_quatesName: "There are no words I could use to describe the love we share. I’m so incredibly thankful for you"),
+        quotesModel(_quatesName: "No matter how dull my days go, your presence makes everything in my life colorful, so grateful to have you in my life"),
+        quotesModel(_quatesName: "I cannot be more blessed for having you in my life. I will cherish you in my heart forever and always"),
+        quotesModel(_quatesName: "Thanks for being my knight in shining armor and having my back. Love you so much"),
+        quotesModel(_quatesName: "I never knew that love could be this beautiful until you came into my life. I love you more than you know"),
+        quotesModel(_quatesName: "No matter how dull my days go, your presence makes everything in my life colorful, so grateful to have you in my life"),
+        quotesModel(_quatesName: "There are no words I could use to describe the love we share. I’m so incredibly thankful for you"),
+        quotesModel(_quatesName: "Thanks for being my knight in shining armor and having my back. Love you so much"),
+    ]
+    
+    private let quotesTitle2Mom =
+    [
+        quotesModel(_quatesName: "A mother is clothed with strength and dignity, laughs without fear of the future. When she speaks her words are wise and she gives instructions with kindness"),
+        quotesModel(_quatesName: "A mother’s happiness is like a beacon, lighting up the future but reflected also on the past in the guise of fond memories."),
+        quotesModel(_quatesName: "In the mother’s eyes, her smile, her stroking touch, the child reads the message: ‘You are there"),
+        quotesModel(_quatesName: "There is no velvet so soft as a mother’s lap, no rose as lovely as her smile, no path so flowery as that imprinted with her footsteps"),
+        quotesModel(_quatesName: "Life began with waking up and loving my mother’s face."),
+        quotesModel(_quatesName: "All that I am, or ever hope to be, I owe to my angel mother There is no influence so powerful as that of the mother"),
+        quotesModel(_quatesName: "A mother’s happiness is like a beacon, lighting up the future but reflected also on the past in the guise of fond memories."),
+        quotesModel(_quatesName: "A mother is always the beginning. She is how things begin.We are born of love; love is our mother"),
+        quotesModel(_quatesName: "There is no influence so powerful as that of the mother All that I am, or ever hope to be, I owe to my angel mother"),
+        quotesModel(_quatesName: "There is no velvet so soft as a mother’s lap, no rose as lovely as her smile, no path so flowery as that imprinted with her footsteps"),
+        quotesModel(_quatesName: "A mother is clothed with strength and dignity, laughs without fear of the future. When she speaks her words are wise and she gives instructions with kindness"),
+
+    ]
+    private let quotesTitle2Father =
+    [
+        quotesModel(_quatesName: "A little girl giggles when she is denied an ice-cream by her mother. She knows daddy will get her some later"),
+        quotesModel(_quatesName: "This relationship has something special about it, that makes every father and every daughter in the world speak warmly about it."),
+        quotesModel(_quatesName: "When I come home, my daughter will run to the door and give me a big hug, and everything that’s happened that day just melts away"),
+        quotesModel(_quatesName: "Daddy, thanks for being my hero, chauffeur, financial support, listener, life mentor, friend, guardian, and simply being there every time I need a hug"),
+        quotesModel(_quatesName: "A little girl giggles when she is denied an ice-cream by her mother. She knows daddy will get her some later"),
+        quotesModel(_quatesName: "When I come home, my daughter will run to the door and give me a big hug, and everything that’s happened that day just melts away"),
+        quotesModel(_quatesName: "This relationship has something special about it, that makes every father and every daughter in the world speak warmly about it."),
+        quotesModel(_quatesName: "A little girl giggles when she is denied an ice-cream by her mother. She knows daddy will get her some later"),
+        quotesModel(_quatesName: "Daddy, thanks for being my hero, chauffeur, financial support, listener, life mentor, friend, guardian, and simply being there every time I need a hug"),
+        quotesModel(_quatesName: "A little girl giggles when she is denied an ice-cream by her mother. She knows daddy will get her some later"),
+
+    ]
+    private let quotesTitle2Wife =
+    [
+        quotesModel(_quatesName: "You are my paradise, and I am the luckiest to be stranded here with you When you are so happy being with your wife that you want no one else in that space except her."),
+        quotesModel(_quatesName: "I became blinded by love after witnessing how beautiful you are both inside and out A person would look for a partner who possesses both outer and inner beauty."),
+        quotesModel(_quatesName: "Throughout your difficult times, you seek peace. When you discover that peace in your partner, you feel thankful for the same"),
+        quotesModel(_quatesName: "A successful marriage expects one to fall in love with the same person again and again. This is exactly what is happening to me"),
+        quotesModel(_quatesName: "Time has been my biggest enemy when it comes to loving you because it is too short to love you in one lifetime"),
+        quotesModel(_quatesName: "A successful marriage expects one to fall in love with the same person again and again. This is exactly what is happening to me"),
+        quotesModel(_quatesName: "Time has been my biggest enemy when it comes to loving you because it is too short to love you in one lifetime"),
+        quotesModel(_quatesName: "Throughout your difficult times, you seek peace. When you discover that peace in your partner, you feel thankful for the same"),
+        quotesModel(_quatesName: "Time has been my biggest enemy when it comes to loving you because it is too short to love you in one lifetime"),
+        quotesModel(_quatesName: "I became blinded by love after witnessing how beautiful you are both inside and out A person would look for a partner who possesses both outer and inner beauty.")
+
+    ]
+    
+    func quotesTitle2GetLove()->[quotesModel]
+    {
+        return quotesTitleL2love
+    }
+    func quotesTitle2GetMom()->[quotesModel]
+    {
+        return quotesTitle2Mom
+    }
+    func quotesTitle2GetFather()->[quotesModel]
+    {
+        return quotesTitle2Father
+    }
+    func quotesTitle2GetWife()->[quotesModel]
+    {
+        return quotesTitle2Wife
+    }
+    
+    
 }
+
+
+
+
+
+
+
+
+
+
 
 class Dataservice3
 {

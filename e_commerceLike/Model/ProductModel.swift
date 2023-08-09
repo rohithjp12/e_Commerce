@@ -20,3 +20,11 @@ struct Product
         self.productImgName = _productImgname
     }
 }
+struct quotesModel
+{
+    private(set) public var quatesName:String
+    
+    init(_quatesName: String) {
+        self.quatesName = _quatesName
+    }
+}

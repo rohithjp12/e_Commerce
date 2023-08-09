@@ -61,14 +61,23 @@ extension girfViewController:UICollectionViewDelegate,UICollectionViewDataSource
     {
         return CGSize(width: collectionView.frame.size.width/3-5, height: collectionView.frame.size.height/3-5)
     }
-//    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath)
-//    {
-//        let c   = DataService.instance.getcat1()[indexPath.row]
-//
-//        CheckViewController.imag = c.productImgName
-//       // imageSelectViewController.ab = DataService.instance.getcat1()
-//        performSegue(withIdentifier: "top", sender: c)
-//    }
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath)
+    {
+        let gif1 = DataService.instance.getcat1()[indexPath.row]
+        GifSelectedViewController.gifImage = gif1.productImgName
+        
+        let gif2 = DataService.instance.getCat2()[indexPath.row]
+        GifSelectedViewController.gifImage = gif2.productImgName
+        
+//        let gif3 = DataService.instance.getCat3()[indexPath.row]
+//        GifSelectedViewController.gifImage = gif3.productImgName
+//        
+//        let gif4 = DataService.instance.getCat4()[indexPath.row]
+//        GifSelectedViewController.gifImage = gif4.productImgName
+//        
+        
+        performSegue(withIdentifier: "gifSelect", sender: AnyObject.self)
+    }
 
     
     

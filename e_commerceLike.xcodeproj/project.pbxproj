@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5D3890AD2A839F4B0076E3B6 /* frameAddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D3890AC2A839F4B0076E3B6 /* frameAddViewController.swift */; };
+		5D3890AF2A83A3930076E3B6 /* GifSelectedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D3890AE2A83A3930076E3B6 /* GifSelectedViewController.swift */; };
 		5D4884FB2A7ECEE000D8B8D0 /* GIFFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D4884FA2A7ECEE000D8B8D0 /* GIFFile.swift */; };
 		5D4884FD2A7ECF3A00D8B8D0 /* funny.gif in Resources */ = {isa = PBXBuildFile; fileRef = 5D4884FC2A7ECF3A00D8B8D0 /* funny.gif */; };
 		5D4884FF2A7ED2BB00D8B8D0 /* anig1.gif in Resources */ = {isa = PBXBuildFile; fileRef = 5D4884FE2A7ED2BB00D8B8D0 /* anig1.gif */; };
@@ -58,7 +60,7 @@
 		5D7084F92A81248000D697EC /* mm5.gif in Resources */ = {isa = PBXBuildFile; fileRef = 5D7084F32A81247F00D697EC /* mm5.gif */; };
 		5D7084FA2A81248000D697EC /* mm4.gif in Resources */ = {isa = PBXBuildFile; fileRef = 5D7084F42A81247F00D697EC /* mm4.gif */; };
 		5D7084FB2A81248000D697EC /* mm6.gif in Resources */ = {isa = PBXBuildFile; fileRef = 5D7084F52A81247F00D697EC /* mm6.gif */; };
-		5D9BABE22A194B2D0085B6B1 /* newGifViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D9BABE12A194B2D0085B6B1 /* newGifViewController.swift */; };
+		5D7084FF2A82D64200D697EC /* frameCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D7084FE2A82D64200D697EC /* frameCell.swift */; };
 		5DD190762A04C4FF0027F82D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DD190752A04C4FF0027F82D /* AppDelegate.swift */; };
 		5DD190782A04C4FF0027F82D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DD190772A04C4FF0027F82D /* SceneDelegate.swift */; };
 		5DD1907A2A04C4FF0027F82D /* CategoryVc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DD190792A04C4FF0027F82D /* CategoryVc.swift */; };
@@ -75,6 +77,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5D3890AC2A839F4B0076E3B6 /* frameAddViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = frameAddViewController.swift; sourceTree = "<group>"; };
+		5D3890AE2A83A3930076E3B6 /* GifSelectedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GifSelectedViewController.swift; sourceTree = "<group>"; };
 		5D4884FA2A7ECEE000D8B8D0 /* GIFFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GIFFile.swift; sourceTree = "<group>"; };
 		5D4884FC2A7ECF3A00D8B8D0 /* funny.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = funny.gif; sourceTree = "<group>"; };
 		5D4884FE2A7ED2BB00D8B8D0 /* anig1.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = anig1.gif; sourceTree = "<group>"; };
@@ -126,7 +130,9 @@
 		5D7084F32A81247F00D697EC /* mm5.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = mm5.gif; sourceTree = "<group>"; };
 		5D7084F42A81247F00D697EC /* mm4.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = mm4.gif; sourceTree = "<group>"; };
 		5D7084F52A81247F00D697EC /* mm6.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = mm6.gif; sourceTree = "<group>"; };
-		5D9BABE12A194B2D0085B6B1 /* newGifViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = newGifViewController.swift; sourceTree = "<group>"; };
+		5D7084FC2A82A48B00D697EC /* anigf11.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = anigf11.gif; sourceTree = "<group>"; };
+		5D7084FD2A82A49A00D697EC /* anig1.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = anig1.gif; sourceTree = "<group>"; };
+		5D7084FE2A82D64200D697EC /* frameCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = frameCell.swift; sourceTree = "<group>"; };
 		5DD190722A04C4FF0027F82D /* e_commerceLike.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = e_commerceLike.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5DD190752A04C4FF0027F82D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5DD190772A04C4FF0027F82D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -192,9 +198,10 @@
 				5D6F46AA2A0D0E1D00B0DB30 /* cardViewController.swift */,
 				5D6F46AC2A0D0E2E00B0DB30 /* QuotesViewController.swift */,
 				5D6F46A82A0D0E0F00B0DB30 /* girfViewController.swift */,
-				5D9BABE12A194B2D0085B6B1 /* newGifViewController.swift */,
 				5DE58BE32A6C420E00C05A6D /* CheckViewController.swift */,
 				5D6E9C642A4AB88D00B9D190 /* imageSelectViewController.swift */,
+				5D3890AC2A839F4B0076E3B6 /* frameAddViewController.swift */,
+				5D3890AE2A83A3930076E3B6 /* GifSelectedViewController.swift */,
 			);
 			path = pageViewController;
 			sourceTree = "<group>";
@@ -202,6 +209,8 @@
 		5D70848F2A8113B600D697EC /* anniversaryGIF */ = {
 			isa = PBXGroup;
 			children = (
+				5D7084FD2A82A49A00D697EC /* anig1.gif */,
+				5D7084FC2A82A48B00D697EC /* anigf11.gif */,
 				5D7084B32A8117D100D697EC /* anigf12.gif */,
 				5D7084B52A8117D100D697EC /* anigf12.jpeg */,
 				5D7084B72A8117D200D697EC /* anigf13.gif */,
@@ -333,6 +342,7 @@
 				5DD190932A04D2460027F82D /* productCell.swift */,
 				5D6BB5892A1B45870056DA24 /* quotesCell.swift */,
 				5D6BB5872A1B37EB0056DA24 /* cardCell.swift */,
+				5D7084FE2A82D64200D697EC /* frameCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -523,12 +533,13 @@
 				5D6E9C652A4AB88D00B9D190 /* imageSelectViewController.swift in Sources */,
 				5D6F46AF2A0D0E3B00B0DB30 /* frameViewController.swift in Sources */,
 				5D6BB5882A1B37EB0056DA24 /* cardCell.swift in Sources */,
-				5D9BABE22A194B2D0085B6B1 /* newGifViewController.swift in Sources */,
 				5D6F46B22A0D109100B0DB30 /* pageViewController.swift in Sources */,
 				5D6E9C672A4ABA6700B9D190 /* imageSelectedCollectionViewCell.swift in Sources */,
 				5D6BB58A2A1B45870056DA24 /* quotesCell.swift in Sources */,
 				5DD1907A2A04C4FF0027F82D /* CategoryVc.swift in Sources */,
 				5D4884FB2A7ECEE000D8B8D0 /* GIFFile.swift in Sources */,
+				5D7084FF2A82D64200D697EC /* frameCell.swift in Sources */,
+				5D3890AD2A839F4B0076E3B6 /* frameAddViewController.swift in Sources */,
 				5DE58BE42A6C420E00C05A6D /* CheckViewController.swift in Sources */,
 				5DD190762A04C4FF0027F82D /* AppDelegate.swift in Sources */,
 				5DD190782A04C4FF0027F82D /* SceneDelegate.swift in Sources */,
@@ -536,6 +547,7 @@
 				5DD190992A04D3A30027F82D /* ProductModel.swift in Sources */,
 				5DD190922A04C90C0027F82D /* Dataservices.swift in Sources */,
 				5DD190902A04C8810027F82D /* CategoryModel.swift in Sources */,
+				5D3890AF2A83A3930076E3B6 /* GifSelectedViewController.swift in Sources */,
 				5D6F46AB2A0D0E1D00B0DB30 /* cardViewController.swift in Sources */,
 				5DD1908E2A04C7C50027F82D /* CategoryCell.swift in Sources */,
 			);

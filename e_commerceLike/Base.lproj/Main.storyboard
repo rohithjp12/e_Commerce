@@ -270,8 +270,11 @@
                                                     <outlet property="delegate" destination="BYZ-38-t0r" id="8E7-g6-6oi"/>
                                                 </connections>
                                             </collectionView>
-                                            <pageControl opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="P71-Sq-CiY">
+                                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="P71-Sq-CiY">
                                                 <rect key="frame" x="138" y="-20" width="148" height="26"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="148" id="Wsd-x1-6tu"/>
+                                                </constraints>
                                                 <color key="pageIndicatorTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <color key="currentPageIndicatorTintColor" name="AccentColor"/>
                                             </pageControl>
@@ -293,6 +296,7 @@
                                             <constraint firstItem="D7y-IB-pPB" firstAttribute="top" secondItem="OI3-7w-cPr" secondAttribute="bottom" constant="5" id="Ujs-fI-9y0"/>
                                             <constraint firstItem="wzC-wT-jOR" firstAttribute="top" secondItem="7wI-fU-Fqz" secondAttribute="bottom" constant="5" id="WUD-2W-Fjy"/>
                                             <constraint firstAttribute="trailing" secondItem="wzC-wT-jOR" secondAttribute="trailing" id="Yzr-Qv-REz"/>
+                                            <constraint firstItem="P71-Sq-CiY" firstAttribute="leading" secondItem="0Td-dQ-FeG" secondAttribute="leading" constant="138" id="aJC-wu-Bco"/>
                                             <constraint firstItem="8p3-Lc-kcp" firstAttribute="top" secondItem="OI3-7w-cPr" secondAttribute="bottom" constant="5" id="agQ-1d-3c9"/>
                                             <constraint firstAttribute="trailing" secondItem="0ia-2p-dcD" secondAttribute="trailing" id="bky-Gh-mqv"/>
                                             <constraint firstItem="P71-Sq-CiY" firstAttribute="top" secondItem="0Td-dQ-FeG" secondAttribute="top" constant="-20" id="cNU-2f-I1X"/>
@@ -378,7 +382,7 @@
                     </view>
                     <navigationItem key="navigationItem" title="Family Wishes " id="ly8-D8-Oix">
                         <barButtonItem key="rightBarButtonItem" title="Item" image="line.3.horizontal.decrease" catalog="system" style="plain" id="2HN-nZ-gHj">
-                            <color key="tintColor" red="1" green="0.45679030999999998" blue="0.95620110739999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <color key="tintColor" red="1" green="0.72285931082248456" blue="0.90989847698241" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
@@ -400,7 +404,7 @@
         <scene sceneID="TGE-WP-aMH">
             <objects>
                 <viewController storyboardIdentifier="pageViewController" id="w7e-sQ-fcm" customClass="pageViewController" customModule="e_commerceLike" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" ambiguous="YES" id="2tg-uM-UNc">
+                    <view key="view" contentMode="scaleToFill" id="2tg-uM-UNc">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -445,11 +449,11 @@
         <scene sceneID="KxP-Uz-gvJ">
             <objects>
                 <viewController id="oZe-xU-mqP" customClass="imageSelectViewController" customModule="e_commerceLike" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="tZm-Df-w1j">
+                    <view key="view" contentMode="scaleToFill" ambiguous="YES" id="tZm-Df-w1j">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="saG-v4-hsZ">
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" pagingEnabled="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="saG-v4-hsZ">
                                 <rect key="frame" x="0.0" y="183" width="393" height="509"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
@@ -496,7 +500,7 @@
                                 <rect key="frame" x="138" y="733" width="116" height="26"/>
                                 <color key="pageIndicatorTintColor" red="0.83921568629999999" green="0.3809594597" blue="0.33232472200000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </pageControl>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ehN-yg-huK">
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ehN-yg-huK">
                                 <rect key="frame" x="16" y="749" width="151" height="47"/>
                                 <color key="backgroundColor" systemColor="systemGreenColor"/>
                                 <constraints>
@@ -512,7 +516,7 @@
                                     <action selector="saveaction:" destination="oZe-xU-mqP" eventType="touchUpInside" id="4Aw-xm-fLw"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="823-Y0-FBM">
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="823-Y0-FBM">
                                 <rect key="frame" x="207" y="749" width="170" height="47"/>
                                 <color key="backgroundColor" systemColor="systemGreenColor"/>
                                 <constraints>
@@ -908,7 +912,7 @@
                                     <constraint firstAttribute="width" constant="393" id="dwc-LS-XNK"/>
                                 </constraints>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="d3" translatesAutoresizingMaskIntoConstraints="NO" id="tMG-5M-0kZ">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="tMG-5M-0kZ">
                                 <rect key="frame" x="46" y="169" width="300" height="325"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="S7A-b1-Dh8">
@@ -920,9 +924,40 @@
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="J7P-Ir-FUh">
                                 <rect key="frame" x="32" y="675" width="329" height="74"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rjW-ve-Z3x">
+                                        <rect key="frame" x="0.0" y="0.0" width="164" height="66"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="66" id="XLp-Gi-eo2"/>
+                                            <constraint firstAttribute="width" constant="164" id="uFd-Rv-iQs"/>
+                                        </constraints>
+                                        <color key="tintColor" white="1" alpha="0.99907113380000001" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Add frame">
+                                            <fontDescription key="titleFontDescription" type="system" pointSize="30"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="btnClicked" destination="vfF-Cv-fBd" eventType="touchUpInside" id="nbv-MY-t43"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rb8-FG-Fpb">
+                                        <rect key="frame" x="164" y="4" width="165" height="66"/>
+                                        <color key="tintColor" white="1" alpha="0.99907113380000001" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Download">
+                                            <fontDescription key="titleFontDescription" type="system" pointSize="30"/>
+                                        </buttonConfiguration>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.15320087112700337" green="0.59334479437934029" blue="0.26716483558420578" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
+                                    <constraint firstItem="rb8-FG-Fpb" firstAttribute="leading" secondItem="rjW-ve-Z3x" secondAttribute="trailing" id="Hgf-We-SdY"/>
+                                    <constraint firstAttribute="bottom" secondItem="rb8-FG-Fpb" secondAttribute="bottom" constant="4" id="VBO-S2-7l6"/>
+                                    <constraint firstItem="rjW-ve-Z3x" firstAttribute="leading" secondItem="J7P-Ir-FUh" secondAttribute="leading" id="Wva-BR-cba"/>
+                                    <constraint firstAttribute="trailing" secondItem="rb8-FG-Fpb" secondAttribute="trailing" id="aaz-v6-qem"/>
                                     <constraint firstAttribute="height" constant="74" id="gha-7S-FQL"/>
+                                    <constraint firstItem="rb8-FG-Fpb" firstAttribute="top" secondItem="J7P-Ir-FUh" secondAttribute="top" constant="4" id="n4p-HQ-Ogr"/>
+                                    <constraint firstItem="rjW-ve-Z3x" firstAttribute="top" secondItem="J7P-Ir-FUh" secondAttribute="top" id="rxu-YV-BHZ"/>
                                     <constraint firstAttribute="width" constant="329" id="sJh-CB-nld"/>
                                 </constraints>
                             </view>
@@ -948,8 +983,10 @@
                     </view>
                     <navigationItem key="navigationItem" id="xQ0-pV-7zW"/>
                     <connections>
+                        <outlet property="chooseBuuton" destination="rjW-ve-Z3x" id="DvK-Sx-shh"/>
                         <outlet property="framelowerView" destination="J7P-Ir-FUh" id="4wu-QE-Sa7"/>
                         <outlet property="imageExternal" destination="S7A-b1-Dh8" id="oj4-uM-o8g"/>
+                        <outlet property="imageInternal" destination="tMG-5M-0kZ" id="m6o-jj-bEe"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="f8c-LR-aom" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -979,7 +1016,6 @@
         <segue reference="hZh-cA-IAo"/>
     </inferredMetricsTieBreakers>
     <resources>
-        <image name="d3" width="161" height="121"/>
         <image name="g2 1" width="600" height="600"/>
         <image name="line.3.horizontal.decrease" catalog="system" width="128" height="73"/>
         <image name="search_bg" width="393" height="220"/>

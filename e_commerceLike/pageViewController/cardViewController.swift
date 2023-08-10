@@ -62,19 +62,16 @@ extension cardViewController:UICollectionViewDelegate,UICollectionViewDataSource
 
         let category1 = DataService.instance.cardAnniversaryGet()[indexPath.row]
         CheckViewController.imag = category1.productImgName
-            
-        let vc  = DataService.instance.cardGoodNightGet()[indexPath.row]
-        CheckViewController.imag = vc.productImgName
-        
-        let cd = DataService.instance.cardLoveGet()[indexPath.row]
-        CheckViewController.imag = cd.productImgName
-        
-        let dc = DataService.instance.cardtMissYou()[indexPath.row]
-        CheckViewController.imag = dc.productImgName
 //
-//        let cdd = DataService.instance.cardBirthday()[indexPath.row]
-//        CheckViewController.imag = cdd.productImgName
-        
+//        let vc  = DataService.instance.cardGoodNightGet()[indexPath.row]
+//        CheckViewController.imag = vc.productImgName
+//
+//        let cd = DataService.instance.cardLoveGet()[indexPath.row]
+//        CheckViewController.imag = cd.productImgName
+//
+//        let dc = DataService.instance.cardtMissYou()[indexPath.row]
+//        CheckViewController.imag = dc.productImgName
+
         performSegue(withIdentifier: "top", sender: AnyObject.self)
     }
 }

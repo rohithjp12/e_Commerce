@@ -63,20 +63,22 @@ extension girfViewController:UICollectionViewDelegate,UICollectionViewDataSource
     }
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath)
     {
+        
+        let categoryy = DataService.instance.getCategoires()[indexPath.row]
         let gif1 = DataService.instance.getcat1()[indexPath.row]
         GifSelectedViewController.gifImage = gif1.productImgName
         
-        let gif2 = DataService.instance.getCat2()[indexPath.row]
-        GifSelectedViewController.gifImage = gif2.productImgName
-        
+//        let gif2 = DataService.instance.getCat2()[indexPath.row]
+//        GifSelectedViewController.gifImage = gif2.productImgName
+//
 //        let gif3 = DataService.instance.getCat3()[indexPath.row]
 //        GifSelectedViewController.gifImage = gif3.productImgName
-//        
+//
 //        let gif4 = DataService.instance.getCat4()[indexPath.row]
 //        GifSelectedViewController.gifImage = gif4.productImgName
-//        
+//
         
-        performSegue(withIdentifier: "gifSelect", sender: AnyObject.self)
+        performSegue(withIdentifier: "gifSelect", sender: categoryy)
     }
 
     
